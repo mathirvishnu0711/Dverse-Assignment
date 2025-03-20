@@ -155,3 +155,91 @@ python hand_gesture.py
 ## 🏁 Conclusion
 This project provides an interactive way to recognize hand gestures using **computer vision** and **deep learning-based tracking**. Customize it for gesture-based controls or other applications! 🚀
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 🧠 Parkinson's Disease Prediction
+
+This project predicts Parkinson's disease using machine learning and deep learning models. It implements **Random Forest, LSTM, and RNN** models and combines their predictions using an **ensemble learning approach**.
+
+## 📌 Features
+- Uses **Random Forest** for traditional ML-based classification.
+- Implements **LSTM and RNN** models for deep learning-based sequence prediction.
+- Standardizes input features using **StandardScaler**.
+- Applies **majority voting** for ensemble classification.
+- Evaluates models using **accuracy and classification report**.
+
+## 🛠️ Setup Instructions
+
+### 1️⃣ Install Dependencies
+Ensure you have Python installed, then install the required libraries:
+
+```bash
+pip install pandas numpy scikit-learn tensorflow
+```
+
+### 2️⃣ Run the Application
+Execute the following command in the terminal:
+
+```bash
+python parkinsons_prediction.py
+```
+
+## 📜 File Structure
+```
+/parkinsons_prediction
+│── parkinsons_prediction.py   # Main application file
+│── Parkinsson disease M.csv   # Dataset file (ensure it's in the same directory)
+│── README.md                  # Project documentation
+```
+
+## 🏗️ How It Works
+1. **Loads the dataset** and removes unnecessary columns.
+2. **Preprocesses the data** (scaling, splitting into train/test).
+3. **Trains Random Forest, LSTM, and RNN models**.
+4. **Makes predictions** with each model.
+5. **Combines predictions** using ensemble learning (majority voting).
+6. **Evaluates model performance** with accuracy and classification reports.
+
+## 🎨 Models Used
+- **Random Forest**: Traditional ML model with decision trees.
+- **LSTM (Long Short-Term Memory)**: Captures sequential patterns.
+- **RNN (Recurrent Neural Network)**: Learns from sequential data.
+- **Ensemble Learning**: Combines predictions for higher accuracy.
+
+## 📊 Results & Evaluation
+Each model is evaluated using:
+- **Accuracy Score**: Measures prediction correctness.
+- **Classification Report**: Displays precision, recall, and F1-score.
+
+## 📝 FAQ
+1. **What if the dataset file is missing?**
+   - Ensure that `Parkinsson disease M.csv` is in the same directory as the script.
+
+2. **How do I improve accuracy?**
+   - Tune hyperparameters like `n_estimators` in Random Forest or `epochs` in LSTM/RNN.
+
+## 🏁 Conclusion
+This project applies **machine learning and deep learning** to detect Parkinson’s disease with high accuracy. It can be further improved with **feature engineering, hyperparameter tuning, or additional ensemble methods**. 🚀
+
+
